@@ -2,6 +2,7 @@
 @import url(./header.css);
 @import url(./about.css);
 @import url(./services.css);
+@import url(./strategy.css);
 
 * {
   margin: 0;
@@ -27,7 +28,7 @@ p {
 
   --background-one: #1f1f1f;
   --background-two: #fa95ae;
-  --backgroun-three: #1f1f1fcc;
+  --background-three: #1f1f1fcc;
 }
 
 a {
@@ -50,4 +51,8 @@ a {
 
 ::-webkit-scrollbar-thumb:hover {
   background-color: #555;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color: #333;
 }
