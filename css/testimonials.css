@@ -1,0 +1,74 @@
+.testimonials {
+  position: relative;
+  width: 100%;
+  height: 460px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--text);
+  gap: 1.5rem;
+  background: url(../assets/background-testimonials.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.testimonials::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--background-four);
+  z-index: 1;
+}
+
+.testimonials > * {
+  position: relative;
+  z-index: 2;
+}
+
+.testimonials-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  max-width: 800px;
+}
+
+.testimonials-info .title {
+  color: var(--title);
+}
+
+.testimonials-content {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonials-content p {
+  font-size: 1rem;
+  border-left: 2px solid #8d8d8d;
+  padding: 1rem;
+  backdrop-filter: blur(5px);
+  width: 90%;
+}
+
+details > summary {
+  padding: 1rem;
+  list-style: none;
+  border: none;
+  cursor: pointer;
+}
+
+details summary::before {
+  content: "▶";
+  display: inline-block;
+  margin-right: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+details[open] summary::before {
+  transform: rotate(90deg);
+}

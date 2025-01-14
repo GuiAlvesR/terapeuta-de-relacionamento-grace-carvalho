@@ -4,6 +4,7 @@
 @import url(./services.css);
 @import url(./strategy.css);
 @import url(./benefits.css);
+@import url(./testimonials.css);
 
 * {
   margin: 0;
@@ -30,6 +31,7 @@ p {
   --background-one: #1f1f1f;
   --background-two: #fa95ae;
   --background-three: #1f1f1fcc;
+  --background-four: #000000cc;
 }
 
 a {
