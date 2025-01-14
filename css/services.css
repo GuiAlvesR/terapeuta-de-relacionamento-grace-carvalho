@@ -34,19 +34,19 @@
   font-size: 24px;
 }
 
-.cards {
+.services .cards {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
-.card {
+.services .card {
   display: flex;
   gap: 1.5rem;
 }
 
-.card .card-number {
+.services .card .card-number {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,12 +59,12 @@
   flex-shrink: 0;
 }
 
-.card .card-content {
+.services .card .card-content {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-.card-content .card-valor {
+.services .card-content .card-valor {
   color: var(--title);
 }

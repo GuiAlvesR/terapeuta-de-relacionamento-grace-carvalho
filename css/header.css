@@ -5,6 +5,7 @@ header {
   justify-content: space-evenly;
   align-items: center;
   background-color: var(--background-one);
+  user-select: none;
 }
 
 .header-intro {
@@ -56,6 +57,10 @@ header {
   cursor: pointer;
   margin-bottom: 10px;
   transition: 0.5s;
+}
+
+.header-buttons button:hover {
+  opacity: 0.6;
 }
 
 .header-img {
