@@ -5,6 +5,8 @@
 @import url(./strategy.css);
 @import url(./benefits.css);
 @import url(./testimonials.css);
+@import url(./doubt.css);
+@import url(./contact.css);
 
 * {
   margin: 0;
