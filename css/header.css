@@ -74,6 +74,7 @@ header {
   header {
     height: 100%;
     flex-direction: column;
+    gap: 2rem;
   }
 
   .header-intro {
@@ -92,5 +93,15 @@ header {
 
   .header-img {
     width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-into .title {
+    font-size: 36px;
+  }
+
+  .header-into .subtitle {
+    font-size: 20px;
   }
 }

@@ -30,3 +30,18 @@
 .about-content .about-content-item .subtitle {
   font-size: 24px;
 }
+
+@media (max-width: 768px) {
+  .about {
+    height: 100%;
+    padding: 40px 20px;
+  }
+
+  .about .about-content {
+    flex-direction: column;
+  }
+
+  .about-content .about-content-item {
+    width: 100%;
+  }
+}
