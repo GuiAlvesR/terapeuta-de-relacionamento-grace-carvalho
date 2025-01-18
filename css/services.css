@@ -71,12 +71,21 @@
 
 @media (max-width: 768px) {
   .services {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .services-img {
     width: 100%;
-    background-color: var(--background-one);
-    color: var(--text);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
+    height: 500px;
+  }
+
+  .services-content {
+    width: 100%;
+    padding: 40px 20px;
+  }
+
+  .services-content .subtitle {
+    font-size: 20px;
   }
 }
