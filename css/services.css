@@ -68,3 +68,15 @@
 .services .card-content .card-valor {
   color: var(--title);
 }
+
+@media (max-width: 768px) {
+  .services {
+    width: 100%;
+    background-color: var(--background-one);
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
+}
