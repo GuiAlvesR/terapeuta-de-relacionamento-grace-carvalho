@@ -89,7 +89,7 @@
   content: "";
   position: absolute;
   width: 2px;
-  height: 550px;
+  height: 600px;
   background-color: #8d8d8d;
   top: -20px;
   left: 50%;
@@ -127,4 +127,76 @@
 
 .center-column .step-number:nth-child(even)::after {
   left: 100%;
+}
+
+@media (max-width: 768px) {
+  .strategy {
+    overflow: visible;
+    align-items: initial;
+    justify-content: initial;
+    padding: 40px 20px;
+  }
+
+  .step {
+    width: 100%;
+  }
+
+  .strategy .subtitle {
+    font-size: 20px;
+  }
+
+  .columns-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+  }
+
+  .left-column {
+    text-align: start;
+    gap: 4rem;
+  }
+
+  .right-column {
+    padding-top: 0rem;
+    gap: 3rem;
+  }
+
+  .center-column {
+    gap: 8rem;
+  }
+
+  .center-column .step-number:nth-child(odd)::after {
+    left: 100%;
+  }
+}
+@media (max-width: 548px) {
+  .columns-group {
+    gap: 4rem;
+  }
+
+  .left-column {
+    gap: 3rem;
+  }
+
+  .right-column {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .strategy .subtitle {
+    font-size: 18px;
+  }
+
+  .columns-group {
+    gap: 0.5rem;
+  }
+
+  .left-column {
+    gap: 0.5rem;
+  }
+
+  .right-column {
+    gap: 0.5rem;
+  }
 }
