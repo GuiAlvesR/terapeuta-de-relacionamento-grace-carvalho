@@ -94,3 +94,35 @@
 .contact-value a:active {
   color: var(--title);
 }
+
+@media (max-width: 768px) {
+  .contact {
+    height: 100%;
+    padding: 40px 20px;
+  }
+
+  .contact-table {
+    width: 100%;
+    max-width: 100%;
+    padding: 0.5rem;
+  }
+
+  .contact-row {
+    display: flex;
+    justify-content: initial;
+    align-items: initial;
+    flex-direction: column;
+    padding: 0.5rem 0.5rem;
+    gap: 10px;
+  }
+
+  .contact-value {
+    text-align: initial;
+  }
+}
+
+@media (max-width: 400px) {
+  .contact-value {
+    font-size: 14px;
+  }
+}
