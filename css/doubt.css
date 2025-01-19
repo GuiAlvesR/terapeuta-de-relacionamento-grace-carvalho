@@ -49,7 +49,6 @@
 }
 
 .doubt-content details p {
-  font-size: 1rem;
   border-left: 2px solid #8d8d8d;
   padding: 1rem;
   backdrop-filter: blur(5px);
@@ -72,4 +71,11 @@ details summary::before {
 
 details[open] summary::before {
   transform: rotate(90deg);
+}
+
+@media (max-width: 768px) {
+  .doubt {
+    height: 100%;
+    padding: 40px 20px;
+  }
 }
