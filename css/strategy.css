@@ -89,7 +89,7 @@
   content: "";
   position: absolute;
   width: 2px;
-  height: 600px;
+  height: 550px;
   background-color: #8d8d8d;
   top: -20px;
   left: 50%;
@@ -165,11 +165,19 @@
     gap: 8rem;
   }
 
+  .center-column::before {
+    height: 600px;
+  }
+
   .center-column .step-number:nth-child(odd)::after {
     left: 100%;
   }
 }
 @media (max-width: 548px) {
+  .steps-container {
+    gap: 2rem;
+  }
+
   .columns-group {
     gap: 4rem;
   }
@@ -181,6 +189,10 @@
   .right-column {
     gap: 2rem;
   }
+
+  .step-number::after {
+    width: 20px;
+  }
 }
 
 @media (max-width: 400px) {
@@ -189,14 +201,14 @@
   }
 
   .columns-group {
-    gap: 0.5rem;
+    gap: 2rem;
   }
 
   .left-column {
-    gap: 0.5rem;
+    gap: 2rem;
   }
 
   .right-column {
-    gap: 0.5rem;
+    gap: 1rem;
   }
 }
